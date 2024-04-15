@@ -1,0 +1,20 @@
+{
+    "name": "TallerTypeScript",
+    "version": "1.0.0",
+    "description": "Proyecto sencillo con TypeScript",
+    "main": "dist/index.js",
+    "scripts": {
+      "start": "node dist/index.js",
+      "build": "browserify src/index.ts -p [ tsify --project tsconfig.json ] -o dist/bundle.js"
+    },
+    "keywords": [
+      "typescript",
+      "node"
+    ],
+    "author": "Juan David Camargo",
+    "license": "MIT",
+    "devDependencies": {
+      "typescript": "^4.5.4"
+    }
+  }
+  

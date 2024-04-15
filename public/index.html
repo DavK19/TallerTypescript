@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Series</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script>var exports = {};</script>
+    <style>
+        .contenedor {
+            background-color: rgb(159, 213, 209);
+            width: 100vw;
+            /* Utiliza el 100% del ancho de la ventana */
+            height: 15vh;
+            /* Utiliza el 15% de la altura de la ventana */
+            display: flex;
+            /* Utiliza un modelo de caja flexible */
+            justify-content: left;
+            /* Alinea el contenido hacia la izquierda */
+            align-items: center;
+            /* Centra verticalmente el contenido */
+            padding-left: 14vw;
+            /* Añade un margen de 20px al borde izquierdo */
+        }
+
+        table.table tbody tr {
+            background-color: #f2f2f2;
+            /* Fondo gris claro */
+        }
+
+        .tabla-container {
+            margin-top: 40px;
+            width: 50%; /* La tabla ocupa el 50% del ancho de su contenedor */
+            float: left; /* Para que la tabla esté en el lado izquierdo */
+        }
+        
+        .container {
+            width: 100%; /* Ocupa todo el ancho disponible */
+        }
+        
+        /* Para evitar que otros elementos floten junto a la tabla */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        table#series tbody tr td:nth-child(1) {
+            width: 90px; /* Ancho deseado */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Listado de Series</h1>
+    </div>
+    <div class="container">
+        <div class="tabla-container">
+            <table class="table" id="series">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Canal</th>
+                        <th scope="col">Temporadas</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            <p id = "promedio"></p>
+        </div>
+        
+    </div>
+
+    <script type="module" src="dist/index.js"></script> <!-- Asegúrate de que esta ruta sea correcta -->
+</body>
+
+</html>
